@@ -1,0 +1,12 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
