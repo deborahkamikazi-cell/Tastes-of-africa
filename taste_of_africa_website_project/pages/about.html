@@ -3,26 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about the mission behind Tastes of Africa and the cultural importance of food in Africa."
+    />
     <title>About | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../index.html">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a>
+
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul id="site-menu" class="site-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="eyebrow">About us</div>
+          <h1>Preserving Africa’s Culinary Heritage</h1>
+          <p>Food is memory, identity and community. We exist to keep it alive.</p>
+        </div>
+      </section>
+
       <section>
-        <h1>About page placeholder</h1>
-        <p>This page is ready for the approved design.</p>
+        <div class="wrap about-grid">
+          <div>
+            <div class="eyebrow">Our mission</div>
+            <h2>Celebrate. Preserve. Share.</h2>
+            <p>
+              Many African recipes live in the hands of grandmothers, never written down. Tastes of Africa documents
+              them with respect so the next generation can cook, taste and remember.
+            </p>
+            <h3>A brief history</h3>
+            <p>
+              African cuisine spans millennia, from Nile-valley grains and Sahelian millets to spices carried along
+              Indian Ocean and trans-Saharan trade routes.
+            </p>
+          </div>
+          <div class="about-visual" aria-label="Food culture illustration">🍛</div>
+        </div>
+      </section>
+
+      <section class="sand">
+        <div class="wrap">
+          <div class="info-cards">
+            <article class="info-card">
+              <div aria-hidden="true" style="font-size: 2.4rem;">🌍</div>
+              <h3>Global influence</h3>
+              <p>African ingredients and techniques shaped cooking from the Caribbean to the American South.</p>
+            </article>
+
+            <article class="info-card">
+              <div aria-hidden="true" style="font-size: 2.4rem;">📜</div>
+              <h3>Why it matters</h3>
+              <p>Traditional food knowledge carries biodiversity, history and identity across generations.</p>
+            </article>
+
+            <article class="info-card">
+              <div aria-hidden="true" style="font-size: 2.4rem;">🤝</div>
+              <h3>Community</h3>
+              <p>Recipes are contributed and verified by cooks across the continent.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>Find us at a culinary landmark</h2>
+          <div class="map-placeholder" aria-label="Map location">📍<br />Kimironko Market, Kigali, Rwanda</div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer content to be added later.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div class="footer-brand">
+          <div class="logo footer-logo">Tastes of <b>Africa</b></div>
+          <p>
+            Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one
+            story at a time.
+          </p>
+          <p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Say hello</a></li>
+            <li>hello@tastesofafrica.example</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p>
     </footer>
   </body>
 </html>

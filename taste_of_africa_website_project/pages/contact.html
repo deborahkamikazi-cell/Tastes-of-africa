@@ -3,26 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Tastes of Africa to share recipe ideas, collaboration requests, and culinary questions."
+    />
     <title>Contact | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../index.html">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a>
+
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul id="site-menu" class="site-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="eyebrow">Contact</div>
+          <h1>We’d Love to Hear From You</h1>
+          <p>Questions, recipe ideas or collaborations? Send us a note.</p>
+        </div>
+      </section>
+
       <section>
-        <h1>Contact page placeholder</h1>
-        <p>This page is ready for the approved design.</p>
+        <div class="wrap contact-layout">
+          <div>
+            <form id="contact-form" class="contact-form" novalidate>
+              <label for="full-name" class="form-field">Full name</label>
+              <input id="full-name" class="text-input" name="fullName" type="text" autocomplete="name" />
+              <div id="full-name-error" class="error-message" aria-live="polite"></div>
+
+              <label for="email" class="form-field">Email address</label>
+              <input id="email" class="text-input" name="email" type="email" autocomplete="email" />
+              <div id="email-error" class="error-message" aria-live="polite"></div>
+
+              <label for="country" class="form-field">Country</label>
+              <select id="country" class="select-input" name="country">
+                <option value="">Select a country</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Morocco">Morocco</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Other">Other</option>
+              </select>
+              <div id="country-error" class="error-message" aria-live="polite"></div>
+
+              <label for="message" class="form-field">Message</label>
+              <textarea id="message" class="textarea-input" name="message" rows="5"></textarea>
+              <div id="message-error" class="error-message" aria-live="polite"></div>
+
+              <button type="submit" class="btn">Send message</button>
+            </form>
+
+            <div id="contact-success" class="success-box" role="status" aria-live="polite">
+              <h3>Thank you!</h3>
+              <p>Your message is on its way. We’ll reply within two working days.</p>
+            </div>
+          </div>
+
+          <aside>
+            <div class="about-visual" aria-label="Food culture illustration">🥘</div>
+            <h3 style="margin-top: 1.5rem;">Contact information</h3>
+            <p>
+              ✉ hello@tastesofafrica.example<br />
+              📍 Kigali, Rwanda<br />
+              🕘 Mon–Fri, 9:00–17:00
+            </p>
+          </aside>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer content to be added later.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div class="footer-brand">
+          <div class="logo footer-logo">Tastes of <b>Africa</b></div>
+          <p>
+            Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one
+            story at a time.
+          </p>
+          <p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Say hello</a></li>
+            <li>hello@tastesofafrica.example</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p>
     </footer>
   </body>
 </html>

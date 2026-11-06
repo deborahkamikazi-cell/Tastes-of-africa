@@ -3,26 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the culinary identity of Africa’s regional cuisines and food traditions."
+    />
     <title>Regions | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../index.html">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a>
+
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul id="site-menu" class="site-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html" aria-current="page">Regions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="eyebrow">Culinary Regions</div>
+          <h1>A Continent of Flavors</h1>
+          <p>
+            Fifty-four countries, thousands of kitchens. Discover how geography, climate and history shaped what
+            Africa eats.
+          </p>
+        </div>
+      </section>
+
       <section>
-        <h1>Regions page placeholder</h1>
-        <p>This page is ready for the approved design.</p>
+        <div class="wrap region-story">
+          <div
+            class="region-visual west"
+            aria-label="West Africa food illustration"
+            style="background-image: linear-gradient(rgba(59,36,28,.35), rgba(59,36,28,.5)), url('../assets/images/Trend-Insights-West-African-Cuisine-Hero.png'); background-size: cover; background-position: center;"
+          ></div>
+          <div>
+            <div class="eyebrow">West Africa</div>
+            <h2>West Africa Cuisine</h2>
+            <p>
+              Bold, smoky, peppery flavors built on slow-cooked sauces and one-pot rice. The cuisine is shaped by a
+              balance of heat, depth, and communal cooking.
+            </p>
+            <p><strong>Ingredients:</strong> Scotch bonnet, palm oil, egusi, thyme, grains of selim</p>
+            <p><strong>Techniques:</strong> Slow stewing, pounding, open-fire smoking</p>
+            <div class="region-facts">
+              <span class="region-tag">Jollof Rice</span>
+              <span class="region-tag">Suya</span>
+              <span class="region-tag">Egusi Soup</span>
+            </div>
+            <p><a href="recipes/jollof-rice.html" class="lnk">See related recipe →</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sand">
+        <div class="wrap region-story">
+          <div>
+            <div class="eyebrow">East Africa</div>
+            <h2>East Africa Cuisine</h2>
+            <p>
+              Fermented breads, aromatic spice blends, and hearty stews shared from one plate. The region celebrates
+              communal texture, spice, and comforting fresh flavors.
+            </p>
+            <p><strong>Ingredients:</strong> Teff, berbere, cassava leaves, plantain, cardamom</p>
+            <p><strong>Techniques:</strong> Fermenting, griddling, slow simmering</p>
+            <div class="region-facts">
+              <span class="region-tag">Injera</span>
+              <span class="region-tag">Isombe</span>
+              <span class="region-tag">Nyama Choma</span>
+            </div>
+            <p><a href="recipes/injera.html" class="lnk">See related recipe →</a></p>
+          </div>
+          <div
+            class="region-visual east"
+            aria-label="East Africa food illustration"
+            style="background-image: linear-gradient(rgba(59,36,28,.35), rgba(59,36,28,.5)), url('../assets/images/East.jpeg'); background-size: cover; background-position: center;"
+          ></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap region-story">
+          <div
+            class="region-visual north"
+            aria-label="North Africa food illustration"
+            style="background-image: linear-gradient(rgba(59,36,28,.35), rgba(59,36,28,.5)), url('../assets/images/North.jpeg'); background-size: cover; background-position: center;"
+          ></div>
+          <div>
+            <div class="eyebrow">North Africa</div>
+            <h2>North Africa Cuisine</h2>
+            <p>
+              Fragrant braises, couscous and the sweet-and-savory harmony of Mediterranean trade. North African dishes
+              pair warm spice with citrus, dried fruit, and rich slow cooking.
+            </p>
+            <p><strong>Ingredients:</strong> Ras el hanout, saffron, preserved lemon, harissa, dates</p>
+            <p><strong>Techniques:</strong> Tagine braising, steaming couscous, charcoal grilling</p>
+            <div class="region-facts">
+              <span class="region-tag">Moroccan Tagine</span>
+              <span class="region-tag">Couscous</span>
+              <span class="region-tag">Shakshuka</span>
+            </div>
+            <p><a href="recipes/moroccan-tagine.html" class="lnk">See related recipe →</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dark">
+        <div class="wrap">
+          <div class="feature-video">
+            <div class="video-placeholder" aria-label="Video preview">
+              <iframe
+                class="youtube-video"
+                src="https://www.youtube.com/embed/jDbUg4f9EFw?rel=0"
+                title="The Soul of African Cooking"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div>
+              <div class="eyebrow">Watch</div>
+              <h2>The Soul of African Cooking</h2>
+              <p>
+                A journey through the markets, fires and family kitchens of the continent.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer content to be added later.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div class="footer-brand">
+          <div class="logo footer-logo">Tastes of <b>Africa</b></div>
+          <p>
+            Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one
+            story at a time.
+          </p>
+          <p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Say hello</a></li>
+            <li>hello@tastesofafrica.example</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p>
     </footer>
   </body>
 </html>

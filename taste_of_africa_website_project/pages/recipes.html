@@ -3,26 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse authentic African recipes by region, ingredient, and cuisine."
+    />
     <title>Recipes | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../index.html">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a>
+
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul id="site-menu" class="site-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Recipes page placeholder</h1>
-        <p>This page is ready for the approved design.</p>
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="eyebrow">Recipes</div>
+          <h1>Explore Authentic African Recipes</h1>
+          <p>
+            From smoky West African rice to Ethiopian stews: search and filter dishes by region.
+          </p>
+        </div>
+      </section>
+
+      <section class="recipes-section">
+        <div class="wrap">
+          <label for="recipe-search" class="search-label">Search recipes</label>
+          <input
+            id="recipe-search"
+            type="search"
+            class="search-input"
+            placeholder="Try “jollof” or “Rwanda”"
+          />
+
+          <div class="filter-row" role="group" aria-label="Filter recipes by region">
+            <button class="filter-chip is-active" data-region="All" type="button" aria-pressed="true">All</button>
+            <button class="filter-chip" data-region="West Africa" type="button" aria-pressed="false">West Africa</button>
+            <button class="filter-chip" data-region="East Africa" type="button" aria-pressed="false">East Africa</button>
+            <button class="filter-chip" data-region="North Africa" type="button" aria-pressed="false">North Africa</button>
+            <button class="filter-chip" data-region="Southern Africa" type="button" aria-pressed="false">Southern Africa</button>
+            <button class="filter-chip" data-region="Central Africa" type="button" aria-pressed="false">Central Africa</button>
+          </div>
+
+          <p id="recipe-results" class="results-count" aria-live="polite"></p>
+          <div id="recipe-grid" class="card-grid grid-3" aria-live="polite"></div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer content to be added later.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div class="footer-brand">
+          <div class="logo footer-logo">Tastes of <b>Africa</b></div>
+          <p>
+            Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one
+            story at a time.
+          </p>
+          <p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Culinary Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Say hello</a></li>
+            <li>hello@tastesofafrica.example</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p>
     </footer>
   </body>
 </html>

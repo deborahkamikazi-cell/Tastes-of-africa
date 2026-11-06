@@ -3,26 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how to make Isombe, a flavorful Rwandan cassava leaf stew." />
     <title>Isombe | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <script src="../../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../../index.html">Home</a>
-      </nav>
-    </header>
-
-    <main>
+    <header class="site-header"><div class="wrap nav"><a href="../../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a><button class="burger" type="button" aria-label="Open menu" aria-expanded="false">☰</button><nav aria-label="Main navigation"><ul id="site-menu" class="site-menu"><li><a href="../../index.html">Home</a></li><li><a href="../recipes.html" aria-current="page">Recipes</a></li><li><a href="../regions.html">Regions</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></nav></div></header>
+    <main class="recipe-detail-shell">
+      <section class="recipe-hero" style="background: linear-gradient(rgba(59,36,28,.72),rgba(59,36,28,.72)),linear-gradient(120deg,#69734B,#3B241C)">
+        <div class="wrap recipe-hero-content"><div><div class="eyebrow">Rwanda · East Africa</div><h1>Isombe</h1></div><button type="button" class="btn btn-ghost" aria-label="Save Isombe to favorites">♡ Save recipe</button></div>
+      </section>
       <section>
-        <h1>Isombe recipe placeholder</h1>
-        <p>This recipe page is ready for the approved design.</p>
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Cultural background</h2>
+            <p>Isombe is a beloved Rwandan dish made from cassava leaves, often served in family meals with a rich, creamy, earthy flavor from groundnuts and vegetables.</p>
+            <div class="detail-stats"><div class="detail-stat"><strong>75 min</strong><span>Prep</span></div><div class="detail-stat"><strong>75 min</strong><span>Cook</span></div><div class="detail-stat"><strong>4</strong><span>Servings</span></div><div class="detail-stat"><strong>Easy</strong><span>Difficulty</span></div></div>
+          </div>
+          <div class="photo-frame">
+            <img
+              class="recipe-feature-photo"
+              src="../../assets/images/ISOMBE.jpg"
+              alt="Isombe, a traditional Rwandan cassava leaf stew"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sand">
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Ingredients</h2>
+            <ul class="ingredient-list">
+              <li class="ingredient-item"><input type="checkbox" /><label>500 g pounded cassava leaves</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>1 eggplant, diced</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>2 tbsp ground peanuts</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>1 onion</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>2 garlic cloves</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>Palm oil, salt</label></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Instructions</h2>
+            <details class="details-panel" open><summary>Step 1</summary><p>Boil cassava leaves for 40 minutes to soften.</p></details>
+            <details class="details-panel"><summary>Step 2</summary><p>Sauté onion and garlic, then add eggplant.</p></details>
+            <details class="details-panel"><summary>Step 3</summary><p>Stir in leaves and peanut paste.</p></details>
+            <details class="details-panel"><summary>Step 4</summary><p>Simmer until thick and creamy, seasoning to taste.</p></details>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap detail-grid">
+          <div><h3>Nutrition (per serving)</h3><table class="nutrition-table"><tr><th>Calories</th><td>290 kcal</td></tr><tr><th>Protein</th><td>9 g</td></tr></table></div>
+          <div><h3>Country of origin</h3><div class="map-placeholder" aria-label="Rwanda map placeholder">📍<br />Rwanda</div></div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap"><h2>Related recipes</h2><div class="related-grid"><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #69734B, #B85C38);"><span aria-hidden="true">🥘</span></div><div class="card-body"><small>Ethiopia · East Africa</small><h3>Injera with Doro Wat</h3><p>Fermented flatbread and spicy chicken stew.</p><a href="injera.html" class="lnk">View Recipe →</a></div></article><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #B85C38, #E5A83B);"><span aria-hidden="true">🍛</span></div><div class="card-body"><small>Nigeria &amp; Ghana · West Africa</small><h3>Jollof Rice</h3><p>Smoky rice and tomato richness.</p><a href="jollof-rice.html" class="lnk">View Recipe →</a></div></article><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #E5A83B, #B85C38);"><span aria-hidden="true">🍲</span></div><div class="card-body"><small>Morocco · North Africa</small><h3>Moroccan Tagine</h3><p>Warm, fragrant braised comfort.</p><a href="moroccan-tagine.html" class="lnk">View Recipe →</a></div></article></div></div>
       </section>
     </main>
-
-    <footer>
-      <p>Footer content to be added later.</p>
-    </footer>
+    <footer class="site-footer"><div class="wrap footer-content"><div class="footer-brand"><div class="logo footer-logo">Tastes of <b>Africa</b></div><p>Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one story at a time.</p><p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p></div><div><h3>Explore</h3><ul><li><a href="../recipes.html">Recipes</a></li><li><a href="../regions.html">Culinary Regions</a></li><li><a href="../about.html">About Us</a></li></ul></div><div><h3>Contact</h3><ul><li><a href="../contact.html">Say hello</a></li><li>hello@tastesofafrica.example</li></ul></div></div><p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p></footer>
   </body>
 </html>

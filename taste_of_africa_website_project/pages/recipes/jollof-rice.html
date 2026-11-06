@@ -3,26 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how to make Jollof Rice, a beloved West African rice dish rich with tomatoes, peppers, and warming spices."
+    />
     <title>Jollof Rice | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../css/styles.css" />
     <script src="../../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../../index.html">Home</a>
-      </nav>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="../../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a>
+
+        <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav aria-label="Main navigation">
+          <ul id="site-menu" class="site-menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../recipes.html" aria-current="page">Recipes</a></li>
+            <li><a href="../regions.html">Regions</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="recipe-detail-shell">
+      <section class="recipe-hero" style="background: linear-gradient(rgba(59,36,28,.7),rgba(59,36,28,.7)),linear-gradient(120deg,#B85C38,#E5A83B)">
+        <div class="wrap recipe-hero-content">
+          <div>
+            <div class="eyebrow">Nigeria &amp; Ghana · West Africa</div>
+            <h1>Jollof Rice</h1>
+          </div>
+          <button type="button" class="btn btn-ghost" aria-label="Save Jollof Rice to favorites">♡ Save recipe</button>
+        </div>
+      </section>
+
       <section>
-        <h1>Jollof Rice recipe placeholder</h1>
-        <p>This recipe page is ready for the approved design.</p>
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Cultural background</h2>
+            <p>
+              Jollof rice is a celebratory dish beloved across West Africa, known for its smoky depth, rich tomato
+              base, and crowd-pleasing aroma. It is often served during festivals, weddings, and family gatherings.
+            </p>
+
+            <div class="detail-stats">
+              <div class="detail-stat"><strong>60 min</strong><span>Prep</span></div>
+              <div class="detail-stat"><strong>60 min</strong><span>Cook</span></div>
+              <div class="detail-stat"><strong>4</strong><span>Servings</span></div>
+              <div class="detail-stat"><strong>Medium</strong><span>Difficulty</span></div>
+            </div>
+          </div>
+
+          <div class="photo-frame">
+            <img
+              class="recipe-feature-photo"
+              src="../../assets/images/Jollof rice.webp"
+              alt="Jollof rice, a celebrated West African rice dish"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="sand">
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Ingredients</h2>
+            <ul class="ingredient-list">
+              <li class="ingredient-item"><input type="checkbox" /><label>2 cups long-grain rice</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>4 ripe tomatoes, blended</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>2 red bell peppers</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>1 scotch bonnet</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>1 onion, sliced</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>3 tbsp palm or vegetable oil</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>Thyme, curry powder, bay leaf</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>Stock and salt to taste</label></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Instructions</h2>
+            <details class="details-panel" open>
+              <summary>Step 1</summary>
+              <p>Blend tomatoes, peppers, and onion into a smooth base.</p>
+            </details>
+            <details class="details-panel">
+              <summary>Step 2</summary>
+              <p>Fry the base in oil until it darkens and the oil rises, about 25 minutes.</p>
+            </details>
+            <details class="details-panel">
+              <summary>Step 3</summary>
+              <p>Add stock and spices, then stir in washed rice.</p>
+            </details>
+            <details class="details-panel">
+              <summary>Step 4</summary>
+              <p>Cover tightly and steam on low heat until tender. Rest for 10 minutes before serving.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap detail-grid">
+          <div>
+            <h3>Nutrition (per serving)</h3>
+            <table class="nutrition-table">
+              <tr><th>Calories</th><td>420 kcal</td></tr>
+              <tr><th>Protein</th><td>8 g</td></tr>
+            </table>
+          </div>
+          <div>
+            <h3>Country of origin</h3>
+            <div class="map-placeholder" aria-label="Nigera and Ghana map placeholder">📍<br />Nigeria &amp; Ghana</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2>Related recipes</h2>
+          <div class="related-grid">
+            <article class="card">
+              <div class="card-image ph" style="background: linear-gradient(135deg, #69734B, #B85C38);"><span aria-hidden="true">🥘</span></div>
+              <div class="card-body"><small>Ethiopia · East Africa</small><h3>Injera with Doro Wat</h3><p>Spongy flatbread with a rich chicken stew.</p><a href="injera.html" class="lnk">View Recipe →</a></div>
+            </article>
+            <article class="card">
+              <div class="card-image ph" style="background: linear-gradient(135deg, #E5A83B, #3B241C);"><span aria-hidden="true">🥖</span></div>
+              <div class="card-body"><small>South Africa · Southern Africa</small><h3>Bunny Chow</h3><p>A hearty curry served in a hollowed loaf.</p><a href="bunny-chow.html" class="lnk">View Recipe →</a></div>
+            </article>
+            <article class="card">
+              <div class="card-image ph" style="background: linear-gradient(135deg, #E5A83B, #B85C38);"><span aria-hidden="true">🍲</span></div>
+              <div class="card-body"><small>Morocco · North Africa</small><h3>Moroccan Tagine</h3><p>A slow-braised aromatic feast.</p><a href="moroccan-tagine.html" class="lnk">View Recipe →</a></div>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Footer content to be added later.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-content">
+        <div class="footer-brand"><div class="logo footer-logo">Tastes of <b>Africa</b></div><p>Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one story at a time.</p><p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p></div>
+        <div><h3>Explore</h3><ul><li><a href="../recipes.html">Recipes</a></li><li><a href="../regions.html">Culinary Regions</a></li><li><a href="../about.html">About Us</a></li></ul></div>
+        <div><h3>Contact</h3><ul><li><a href="../contact.html">Say hello</a></li><li>hello@tastesofafrica.example</li></ul></div>
+      </div>
+      <p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p>
     </footer>
   </body>
 </html>

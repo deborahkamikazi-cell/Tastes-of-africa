@@ -3,26 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how to make Bunny Chow, a Durban curry-filled bread favorite from South Africa." />
     <title>Bunny Chow | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/styles.css" />
     <script src="../../js/script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main navigation">
-        <a href="../../index.html">Home</a>
-      </nav>
-    </header>
-
-    <main>
+    <header class="site-header"><div class="wrap nav"><a href="../../index.html" class="logo" aria-label="Tastes of Africa home">Tastes of <b>Africa</b></a><button class="burger" type="button" aria-label="Open menu" aria-expanded="false">☰</button><nav aria-label="Main navigation"><ul id="site-menu" class="site-menu"><li><a href="../../index.html">Home</a></li><li><a href="../recipes.html" aria-current="page">Recipes</a></li><li><a href="../regions.html">Regions</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></nav></div></header>
+    <main class="recipe-detail-shell">
+      <section class="recipe-hero" style="background: linear-gradient(rgba(59,36,28,.72),rgba(59,36,28,.72)),linear-gradient(120deg,#B85C38,#3B241C)">
+        <div class="wrap recipe-hero-content"><div><div class="eyebrow">South Africa · Southern Africa</div><h1>Bunny Chow</h1></div><button type="button" class="btn btn-ghost" aria-label="Save Bunny Chow to favorites">♡ Save recipe</button></div>
+      </section>
       <section>
-        <h1>Bunny Chow recipe placeholder</h1>
-        <p>This recipe page is ready for the approved design.</p>
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Cultural background</h2>
+            <p>Bunny Chow is a beloved South African street-food classic, usually made with a hollowed loaf filled with fragrant curry and served in a single, satisfying portion.</p>
+            <div class="detail-stats"><div class="detail-stat"><strong>70 min</strong><span>Prep</span></div><div class="detail-stat"><strong>70 min</strong><span>Cook</span></div><div class="detail-stat"><strong>4</strong><span>Servings</span></div><div class="detail-stat"><strong>Easy</strong><span>Difficulty</span></div></div>
+          </div>
+          <div class="photo-frame">
+            <img
+              class="recipe-feature-photo"
+              src="../../assets/Bunny-Chow.webp"
+              alt="Bunny Chow, a South African curry-filled bread dish"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sand">
+        <div class="wrap detail-grid">
+          <div>
+            <h2>Ingredients</h2>
+            <ul class="ingredient-list">
+              <li class="ingredient-item"><input type="checkbox" /><label>1 unsliced white loaf</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>500 g chicken or beans</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>2 tbsp curry masala</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>2 potatoes</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>1 tomato</label></li>
+              <li class="ingredient-item"><input type="checkbox" /><label>Onion, garlic, ginger</label></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Instructions</h2>
+            <details class="details-panel" open><summary>Step 1</summary><p>Fry onion, garlic and ginger with masala.</p></details>
+            <details class="details-panel"><summary>Step 2</summary><p>Add meat, tomato and potato; simmer until tender.</p></details>
+            <details class="details-panel"><summary>Step 3</summary><p>Cut the loaf in half and hollow it out.</p></details>
+            <details class="details-panel"><summary>Step 4</summary><p>Fill generously and serve with the bread lid.</p></details>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap detail-grid">
+          <div><h3>Nutrition (per serving)</h3><table class="nutrition-table"><tr><th>Calories</th><td>620 kcal</td></tr><tr><th>Protein</th><td>28 g</td></tr></table></div>
+          <div><h3>Country of origin</h3><div class="map-placeholder" aria-label="South Africa map placeholder">📍<br />South Africa</div></div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap"><h2>Related recipes</h2><div class="related-grid"><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #69734B, #B85C38);"><span aria-hidden="true">🥘</span></div><div class="card-body"><small>Ethiopia · East Africa</small><h3>Injera with Doro Wat</h3><p>Fermented bread and stewed chicken.</p><a href="injera.html" class="lnk">View Recipe →</a></div></article><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #B85C38, #E5A83B);"><span aria-hidden="true">🍛</span></div><div class="card-body"><small>Nigeria &amp; Ghana · West Africa</small><h3>Jollof Rice</h3><p>Smoky rice and depth-rich tomato sauce.</p><a href="jollof-rice.html" class="lnk">View Recipe →</a></div></article><article class="card"><div class="card-image ph" style="background: linear-gradient(135deg, #E5A83B, #3B241C);"><span aria-hidden="true">🍲</span></div><div class="card-body"><small>Morocco · North Africa</small><h3>Moroccan Tagine</h3><p>Warm, aromatic braise.</p><a href="moroccan-tagine.html" class="lnk">View Recipe →</a></div></article></div></div>
       </section>
     </main>
-
-    <footer>
-      <p>Footer content to be added later.</p>
-    </footer>
+    <footer class="site-footer"><div class="wrap footer-content"><div class="footer-brand"><div class="logo footer-logo">Tastes of <b>Africa</b></div><p>Our mission is to celebrate, preserve and share the culinary heritage of a continent, one dish and one story at a time.</p><p class="socials" aria-label="Social media">📷 Instagram &nbsp; ▶ YouTube &nbsp; ✦ Pinterest &nbsp; ✉ Facebook</p></div><div><h3>Explore</h3><ul><li><a href="../recipes.html">Recipes</a></li><li><a href="../regions.html">Culinary Regions</a></li><li><a href="../about.html">About Us</a></li></ul></div><div><h3>Contact</h3><ul><li><a href="../contact.html">Say hello</a></li><li>hello@tastesofafrica.example</li></ul></div></div><p class="copyright">© 2026 Tastes of Africa. All rights reserved.</p></footer>
   </body>
 </html>
